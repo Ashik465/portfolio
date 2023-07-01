@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Router>
-        <nav className="w-10/12 mx-auto">
+        <nav className="w-10/12 mx-auto container">
           <div className="navbar bg-base-100">
             <div className="navbar-start">
               <div className="dropdown">
@@ -58,7 +58,9 @@ function App() {
                 </ul>
               </div>
               <Link to="/" className="">
-                <h1>Ashik</h1>
+              <div>
+        <h1 className="text-5xl font-signature md:ml-2">Ashik</h1>
+      </div>
               </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
