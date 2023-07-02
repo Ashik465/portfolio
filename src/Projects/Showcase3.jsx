@@ -1,6 +1,6 @@
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { SiExpress, SiMongodb } from "react-icons/si";
-import eliteSports from "../assets/projects/elite-sports-academy-53572.web.app.jpeg";
+import chefRecipe from "../assets/projects/chef-recipe-7d3d4.web.app.jpeg";
 import Button from "../Button/Button";
 import ButtonSecond from "../Button/ButtonSecond";
 
@@ -10,18 +10,17 @@ const Showcase1 = () => {
       <div className="hero-content flex-col lg:gap-10 lg:flex-row-reverse">
         <div className="card flex-shrink-0 w-full max-w-sm">
           <div className="card-body">
-            <h1 className="font-bold">EliteSports-Academy ⚽️</h1>
+           
+            <h1 className="font-bold">Chefs table 👨‍🍳</h1>
             <p className="py-6">
-              ● This website has 3 types of role-based authorization admin can
-              make a user instructor or admin <br />
-              ● By default, every user is a
-              student and can book sports classes and payments to get enrolled. <br />
-              ● Features include a payment system, user sign-up, log-in, and
-              private route. <br />
+            ● Users can browse through various types of recipes from different chefs.
+ <br />
+ ● Implemented features include user sign-up, log-in, and private route.
+ <br />
+ ● Logged-in users can access the details of each chef.
+ <br />
               <span className=" text-[#FFC107] font-bold">Technologies: </span>
-               React, daisy-ui, Tailwind,
-              React-router, JWT, Express, MongoDB, Firebase authentication,
-              framer motion, Axios, Swiper,react-helmet, stripe/stripe-js
+              Tailwind, React-router, Express, MongoDB, Firebase authentication
             </p>
            
             <div className="flex justify-between items-center">
@@ -41,7 +40,7 @@ const Showcase1 = () => {
             <div className="mt-2 flex items-center justify-between">
               <div
                 onClick={() =>
-                  window.open("https://elite-sports-academy-53572.web.app/", "_blank")
+                  window.open("https://chef-recipe-7d3d4.web.app/", "_blank")
                 }
               >
                 <Button />
@@ -49,7 +48,7 @@ const Showcase1 = () => {
               <div
                 onClick={() =>
                   window.open(
-                    "https://github.com/Ashik465/elite-sports-academy-client-React",
+                    "https://github.com/Ashik465/chef-table-client-React",
                     "_blank"
                   )
                 }
@@ -59,7 +58,7 @@ const Showcase1 = () => {
               <div
                 onClick={() =>
                   window.open(
-                    "https://github.com/Ashik465/elite-sports-academy-server-Express",
+                    "https://github.com/Ashik465/chef-table-server-Express",
                     "_blank"
                   )
                 }
@@ -77,7 +76,7 @@ const Showcase1 = () => {
         </div>
         <div className="card rounded-none flex-shrink-0 w-full bg-[#f7e8dd] max-w-sm h-96 overflow-y-scroll">
           <div className="card-body">
-            <img src={eliteSports} alt="" />
+            <img src={chefRecipe} alt="" />
           </div>
         </div>
       </div>
