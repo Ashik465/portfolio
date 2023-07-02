@@ -23,7 +23,7 @@ const Contact = () => {
           });
       };
     return (
-        <div id="contact" className=' container mx-auto my-10'>
+        <div id="contact" className=' container mx-auto my-10 '>
             <div className='text-center font-bold'>
                 <h1 className='text-[#FFC107] text-3xl'>Contact me </h1>  
             </div>
@@ -38,7 +38,8 @@ const Contact = () => {
       <textarea name="message" />
       <input type="submit" value="Send" />
     </form> */}
-     <form ref={form} onSubmit={sendEmail} className="max-w-md mx-auto bg-white p-6 rounded-md shadow-lg">
+    <div className='mx-5'>
+         <form ref={form} onSubmit={sendEmail} className="max-w-md mx-auto bg-white p-6 rounded-md shadow-lg">
       <div className="mb-4">
         <label htmlFor="from_name" className="block text-gray-700 font-semibold mb-2">Name</label>
         <input type="text" name="from_name" id="from_name" className="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring focus:border-blue-500" />
@@ -55,6 +56,8 @@ const Contact = () => {
         Send
       </button>
     </form>
+    </div>
+    
 
         </div>
     );
