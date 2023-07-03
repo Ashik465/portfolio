@@ -25,7 +25,7 @@ const Contact = () => {
     return (
         <div id="contact" className=' container mx-auto my-10 '>
             <div className='text-center font-bold'>
-                <h1 className='text-[#FFC107] text-3xl'>Contact me </h1>  
+                <h1 className='text-[#FFC107] text-3xl my-5'>Contact me </h1>  
             </div>
            
            {/* form */}
@@ -52,7 +52,7 @@ const Contact = () => {
         <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">Message</label>
         <textarea name="message" id="message" rows="5" className="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"></textarea>
       </div>
-      <button type="submit" className="bg-[#FFC107] hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:border-blue-500">
+      <button type="submit" className="bg-[#FFC107] hover:bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:border-blue-500 w-full">
         Send
       </button>
     </form>
