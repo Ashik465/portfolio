@@ -36,17 +36,7 @@ const Contact = () => {
       <div className="text-center font-bold">
         <h1 className="text-[#FFC107] text-3xl my-5">Contact me </h1>
       </div>
-
-      {/* form */}
-      {/* <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="from_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form> */}
+     
       <div className="mx-5">
         <form
           ref={form}
