@@ -1,5 +1,6 @@
 import { HiArrowDown,  } from "react-icons/hi2";
-import image from "../assets/me/me.png";
+// import image from "../assets/me/me.png";
+import image2 from "../assets/me/I.png";
 import Typewriter from "typewriter-effect";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import SphereEffect from "../Sphere/Sphere";
@@ -89,7 +90,7 @@ const Home = () => {
           </div>
           <div className="justify-self-center mask mask-circle">
             <img
-              src={image}
+              src={image2}
               alt="Person Image"
               className="relative z-10 h-[450px] pt-4"
             />
