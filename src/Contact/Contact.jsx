@@ -55,6 +55,7 @@ const Contact = () => {
               name="from_name"
               id="from_name"
               className="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
+              required
             />
           </div>
           <div className="mb-4">
@@ -69,6 +70,7 @@ const Contact = () => {
               name="user_email"
               id="user_email"
               className="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
+              required
             />
           </div>
           <div className="mb-4">
@@ -83,6 +85,7 @@ const Contact = () => {
               id="message"
               rows="5"
               className="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
+
             ></textarea>
           </div>
           <button
