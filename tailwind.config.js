@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primaryBg: "#000000", // Custom black color
+      },
+    },
     fontFamily: {
       signature: ["Great Vibes"],
     },

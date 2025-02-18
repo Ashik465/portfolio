@@ -12,3 +12,7 @@
       scroll-snap-type: y mandatory;
   }
 }
+
+body {
+  @apply bg-primaryBg text-white;
+}
