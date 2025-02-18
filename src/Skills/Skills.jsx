@@ -1,18 +1,18 @@
 import Marquee from "react-fast-marquee";
 
 const skills = [
-  { name: "HTML", image: "/src/assets/skills/html.svg" },
-  { name: "CSS", image: "/src/assets/skills/css.svg" },
-  { name: "Tailwind", image: "/src/assets/skills/tailwind.svg" },
-  { name: "Bootstrap", image: "/src/assets/skills/bootstrap.svg" },
-  { name: "JavaScript", image: "/src/assets/skills/javascript.svg" },
-  { name: "React", image: "/src/assets/skills/react.svg" },
-  { name: "Next Js", image: "/src/assets/skills/nextJS.svg" },
-  { name: "Git", image: "/src/assets/skills/git.svg" },
-  { name: "MongoDB", image: "/src/assets/skills/mongoDB.svg" },
-  { name: "Node js", image: "/src/assets/skills/node.png" },
-  { name: "Figma", image: "/src/assets/skills/figma.svg" },
-  { name: "Firebase", image: "/src/assets/skills/firebase.svg" },
+  { name: "HTML", image: "/skills/html.svg" },
+  { name: "CSS", image: "/skills/css.svg" },
+  { name: "Tailwind", image: "/skills/tailwind.svg" },
+  { name: "Bootstrap", image: "/skills/bootstrap.svg" },
+  { name: "JavaScript", image: "/skills/javascript.svg" },
+  { name: "React", image: "/skills/react.svg" },
+  { name: "Next Js", image: "/skills/nextJS.svg" },
+  { name: "Git", image: "/skills/git.svg" },
+  { name: "MongoDB", image: "/skills/mongoDB.svg" },
+  { name: "Node js", image: "/skills/node.png" },
+  { name: "Figma", image: "/skills/figma.svg" },
+  { name: "Firebase", image: "/skills/firebase.svg" },
 ];
 
 const Skills = () => {
