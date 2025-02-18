@@ -14,16 +14,16 @@ const Showcase1 = () => {
             <p className="py-6">
               ● This website has 3 types of role-based authorization admin can
               make a user instructor or admin <br />
-              ● By default, every user is a
-              student and can book sports classes and payments to get enrolled. <br />
+              ● By default, every user is a student and can book sports classes
+              and payments to get enrolled. <br />
               ● Features include a payment system, user sign-up, log-in, and
               private route. <br />
               <span className=" text-[#FFC107] font-bold">Technologies: </span>
-               React, daisy-ui, Tailwind,
-              React-router, JWT, Express, MongoDB, Firebase authentication,
-              framer motion, Axios, Swiper,react-helmet, stripe/stripe-js
+              React, daisy-ui, Tailwind, React-router, JWT, Express, MongoDB,
+              Firebase authentication, framer motion, Axios,
+              Swiper,react-helmet, stripe/stripe-js
             </p>
-           
+
             <div className="flex justify-between items-center">
               <div className="px-4 py-2 bg-[#3cb2f6] rounded-full shadow-2xl">
                 <FaReact className="text-white" />
@@ -41,7 +41,10 @@ const Showcase1 = () => {
             <div className="mt-2 flex items-center justify-between">
               <div
                 onClick={() =>
-                  window.open("https://elite-sports-academy-53572.web.app/", "_blank")
+                  window.open(
+                    "https://elite-sports-academy-53572.web.app/",
+                    "_blank"
+                  )
                 }
               >
                 <Button />
@@ -64,13 +67,11 @@ const Showcase1 = () => {
                   )
                 }
               >
-
-<ButtonSecond ></ButtonSecond>
+                <ButtonSecond></ButtonSecond>
                 {/* <div className="flex flex-col">
                    <ButtonSecond ></ButtonSecond>
                <h1>server side</h1>  
                 </div> */}
-               
               </div>
             </div>
           </div>
