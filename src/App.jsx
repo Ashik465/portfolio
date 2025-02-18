@@ -5,6 +5,7 @@ import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
+import Skills from "./Skills/Skills";
 // import { HiRocketLaunch } from "react-icons/hi2";
 
 function App() {
@@ -41,6 +42,11 @@ function App() {
                     </Link>
                   </li>
                   <li>
+                    <Link smooth to="/#skills">
+                      Skills
+                    </Link>
+                  </li>
+                  <li>
                     <Link smooth to="/#about">
                       About
                     </Link>
@@ -72,6 +78,15 @@ function App() {
                     className="focus:text-[#18C08B] hover:bg-transparent font-mono font-bold text-gray-500"
                   >
                     Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    smooth
+                    to="/#skills"
+                    className="focus:text-[#18C08B] hover:bg-transparent font-mono font-bold text-gray-500"
+                  >
+                     Skills
                   </Link>
                 </li>
                 <li>
@@ -133,6 +148,11 @@ function App() {
           style={{ scrollBehavior: "smooth", scrollSnapType: "y mendatory" }}
         >
           <Home />
+        </div>
+        <div
+          style={{ scrollBehavior: "smooth", scrollSnapType: "y mendatory" }}
+        >
+          <Skills />
         </div>
         <div
           style={{ scrollBehavior: "smooth", scrollSnapType: "y mendatory" }}

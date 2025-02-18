@@ -4,7 +4,7 @@ import laptopAnimation from '../assets/laptop.json'
 const About = () => {
     return (
         <>
-           <section id="about" className='w-10/12 mx-auto container mx-auto'>
+           <section id="about" className='w-10/12 container mx-auto'>
       <div className="triangle hidden lg:block"></div>
       <h1 className='text-center mt-20 lg:mt-36 font-bold text-xl lg:text-4xl text-[#FFC107] mb-10'>About Me</h1>
       <div className="card lg:card-side bg-[#ebf9f5]">
