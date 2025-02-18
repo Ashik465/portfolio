@@ -2,6 +2,11 @@ import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HashLink as Link } from 'react-router-hash-link';
 
 const Footer = () => {
+  const customScroll = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -70; // Adjust this value to scroll 10px before the element
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  };
 
     return (
         <div>
@@ -36,10 +41,10 @@ const Footer = () => {
               </div>
             </div>
                 <div className="grid grid-flow-col gap-4 list-none">
-                    <li><Link smooth to="/#header" className='focus:text-[#18C08B] hover:underline'>Home</Link></li>
-                    <li><Link smooth to="/#about" className='focus:text-[#18C08B] hover:underline'>About</Link></li>
-                    <li><Link smooth to="/#projects" className='focus:text-[#18C08B] hover:underline'>Projects</Link></li>
-                    <li><Link smooth to="/#contact" className='focus:text-[#18C08B] hover:underline'>Contact Me</Link></li>
+                    <li><Link scroll={customScroll}  smooth to="/#header" className='focus:text-[#18C08B] hover:underline'>Home</Link></li>
+                    <li><Link scroll={customScroll} smooth to="/#about" className='focus:text-[#18C08B] hover:underline'>About</Link></li>
+                    <li><Link scroll={customScroll} smooth to="/#projects" className='focus:text-[#18C08B] hover:underline'>Projects</Link></li>
+                    <li><Link scroll={customScroll} smooth to="/#contact" className='focus:text-[#18C08B] hover:underline'>Contact Me</Link></li>
                 </div>
             </footer>
         </div>

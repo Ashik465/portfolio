@@ -6,7 +6,12 @@ import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
 import Skills from "./Skills/Skills";
-// import { HiRocketLaunch } from "react-icons/hi2";
+
+const customScroll = (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -70; // Adjust this value to scroll 10px before the element
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+};
 
 function App() {
   return (
@@ -37,27 +42,27 @@ function App() {
                   className="menu menu-compact dropdown-content shadow bg-base-100 rounded-box w-40"
                 >
                   <li>
-                    <Link smooth to="/#header">
+                    <Link scroll={customScroll} to="/#header">
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link smooth to="/#skills">
+                    <Link scroll={customScroll} to="/#skills">
                       Skills
                     </Link>
                   </li>
                   <li>
-                    <Link smooth to="/#about">
+                    <Link scroll={customScroll} to="/#about">
                       About
                     </Link>
                   </li>
                   <li>
-                    <Link smooth to="/#projects">
+                    <Link scroll={customScroll} to="/#projects">
                       Projects
                     </Link>
                   </li>
                   <li>
-                    <Link smooth to="/#contact">
+                    <Link scroll={customScroll} to="/#contact">
                       Contact Me
                     </Link>
                   </li>
@@ -73,7 +78,7 @@ function App() {
               <ul className="menu menu-horizontal px-1">
                 <li>
                   <Link
-                    smooth
+                    scroll={customScroll}
                     to="/#header"
                     className="focus:text-[#18C08B] hover:bg-transparent font-mono font-bold text-gray-500"
                   >
@@ -82,16 +87,16 @@ function App() {
                 </li>
                 <li>
                   <Link
-                    smooth
+                    scroll={customScroll}
                     to="/#skills"
                     className="focus:text-[#18C08B] hover:bg-transparent font-mono font-bold text-gray-500"
                   >
-                     Skills
+                    Skills
                   </Link>
                 </li>
                 <li>
                   <Link
-                    smooth
+                    scroll={customScroll}
                     to="/#about"
                     className="focus:text-[#18C08B] hover:bg-transparent font-mono font-bold text-gray-500"
                   >
@@ -100,7 +105,7 @@ function App() {
                 </li>
                 <li>
                   <Link
-                    smooth
+                    scroll={customScroll}
                     to="/#projects"
                     className="focus:text-[#18C08B] hover:bg-transparent font-mono font-bold text-gray-500"
                   >
@@ -109,7 +114,7 @@ function App() {
                 </li>
                 <li>
                   <Link
-                    smooth
+                    scroll={customScroll}
                     to="/#contact"
                     className="focus:text-[#18C08B] hover:bg-transparent font-mono font-bold text-gray-500"
                   >
@@ -119,15 +124,8 @@ function App() {
               </ul>
             </div>
             <div className="navbar-end ">
-              {/* <Link
-                to="/#contact"
-                className="btn btn-outline border-2 hover:bg-[#70DCBA] hover:border-[#70DCBA] text-[#18C08B]"
-              >
-                Hire me
-                <HiRocketLaunch className="ml-2"></HiRocketLaunch>
-              </Link> */}
-              {/* custom button  */}
               <Link
+                scroll={customScroll}
                 to="/#contact"
                 className="relative inline-block text-base md:text-lg group"
               >
@@ -144,32 +142,21 @@ function App() {
             </div>
           </div>
         </nav>
-        <div
-          style={{ scrollBehavior: "smooth", scrollSnapType: "y mendatory" }}
-        >
+        <div style={{ scrollBehavior: "smooth" }}>
           <Home />
         </div>
-        <div
-          style={{ scrollBehavior: "smooth", scrollSnapType: "y mendatory" }}
-        >
+        <div style={{ scrollBehavior: "smooth" }}>
           <Skills />
         </div>
-        <div
-          style={{ scrollBehavior: "smooth", scrollSnapType: "y mendatory" }}
-        >
+        <div style={{ scrollBehavior: "smooth" }}>
           <About />
         </div>
-        <div
-          style={{ scrollBehavior: "smooth", scrollSnapType: "y mendatory" }}
-        >
+        <div style={{ scrollBehavior: "smooth" }}>
           <Projects />
         </div>
-        <div
-          style={{ scrollBehavior: "smooth", scrollSnapType: "y mendatory" }}
-        >
+        <div style={{ scrollBehavior: "smooth" }}>
           <Contact />
         </div>
-
         <Footer />
       </Router>
     </>
