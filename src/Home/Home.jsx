@@ -1,17 +1,12 @@
-import { HiArrowDown,  } from "react-icons/hi2";
+import { HiArrowDown } from "react-icons/hi2";
 // import image from "../assets/me/me.png";
 import image2 from "../assets/me/I.png";
 import Typewriter from "typewriter-effect";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import SphereEffect from "../Sphere/Sphere";
-import resume from '../assets/resume/Resume-of-Ashikul-Islam.pdf'
-
-
+import resume from "../assets/resume/Resume-of-Ashikul-Islam.pdf";
 
 const Home = () => {
-
-
- 
   return (
     <>
       <section className="mt-5 lg:mt-20 container mx-auto" id="header">
@@ -74,7 +69,7 @@ const Home = () => {
                 ></FaGithub>
               </div>
             </div>
-            
+
             {/* download */}
             <a
               href={resume}
@@ -92,15 +87,13 @@ const Home = () => {
             <img
               src={image2}
               alt="Person Image"
-              className="relative z-10 h-[450px] pt-4"
+              className="relative z-10 sm:h-[450px] pt-4"
             />
             <div className="absolute top-64 lg:top-0 lg:bottom-0">
               <SphereEffect />
             </div>
-           
           </div>
         </div>
-     
       </section>
     </>
   );

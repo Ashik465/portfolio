@@ -18,7 +18,7 @@ const skills = [
 const Skills = () => {
   return (
     <>
-      <section id="skills" className="w-10/12 container mx-auto">
+      <section id="skills" className="container mx-auto">
         <div className="triangle hidden lg:block"></div>
         <h1 className="text-center mt-20 lg:mt-36 font-bold text-xl lg:text-4xl text-[#FFC107] mb-10">
           Skills
@@ -48,8 +48,8 @@ const Skills = () => {
                 {skill.name}
               </p>
               <div className="w-3/4">
-                      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-zinc-300 to-transparent" />
-                    </div>
+                <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-zinc-300 to-transparent" />
+              </div>
             </div>
           ))}
         </Marquee>
