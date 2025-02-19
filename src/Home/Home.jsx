@@ -51,7 +51,7 @@ const Home = () => {
                   onClick={() =>
                     window.open("https://www.facebook.com/Ashik9305/", "_blank")
                   }
-                  className="fill-[#FFC107] btn-circle btn-outline p-2 border-0 hover:border-[#FFC107] border-dashed cursor-pointer hover:bg-transparent hover:border-2 active:animate-ping"
+                  className="fill-[#0260db]  btn-circle btn-outline p-2 border-0 hover:border-[#FFC107] border-dashed cursor-pointer hover:bg-transparent hover:border-2 active:animate-ping"
                 ></FaFacebook>
               </div>
               <div className="grid grid-flow-col gap-4">
@@ -62,7 +62,7 @@ const Home = () => {
                       "_blank"
                     )
                   }
-                  className="fill-[#FFC107] btn-circle btn-outline p-2 border-0 hover:border-[#FFC107] border-dashed cursor-pointer hover:bg-transparent hover:border-2 active:animate-ping"
+                  className="fill-[#0e76a8] btn-circle btn-outline p-2 border-0 hover:border-[#FFC107] border-dashed cursor-pointer hover:bg-transparent hover:border-2 active:animate-ping"
                 ></FaLinkedin>
               </div>
               <div className="grid grid-flow-col gap-4">
@@ -70,7 +70,7 @@ const Home = () => {
                   onClick={() =>
                     window.open("https://github.com/Ashik465", "_blank")
                   }
-                  className="fill-[#FFC107] btn-circle btn-outline p-2 border-0 hover:border-[#FFC107] border-dashed cursor-pointer hover:bg-transparent hover:border-2 active:animate-ping"
+                  className="fill-white btn-circle btn-outline p-2 border-0 hover:border-[#FFC107] border-dashed cursor-pointer hover:bg-transparent hover:border-2 active:animate-ping"
                 ></FaGithub>
               </div>
             </div>
