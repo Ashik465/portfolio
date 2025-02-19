@@ -20,7 +20,7 @@ function App() {
         <nav className="w-10/12 mx-auto container sticky z-50 top-0">
           <div className="navbar bg-base-100 bg-opacity-10 backdrop-blur-sm">
             <div className="navbar-start">
-              <div className="dropdown">
+              <div className="dropdown ">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ function App() {
                 </label>
                 <ul
                   tabIndex={0}
-                  className="menu menu-compact dropdown-content shadow bg-base-100 rounded-box w-40"
+                  className="menu menu-compact dropdown-content shadow bg-black rounded-box w-40"
                 >
                   <li>
                     <Link scroll={customScroll} to="/#header">
